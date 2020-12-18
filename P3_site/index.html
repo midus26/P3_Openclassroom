@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P3_DWJ</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<link href="style.css" rel="stylesheet"/>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.3.0/dist/MarkerCluster.Default.css" />
+	<script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster-src.js"></script>
+</head>
+<body>
+	<header>
+		<div id="LogoTitre">
+			<img src="Image/Logo.png" alt="Logo" id="Logo"/>
+			<p>Mon<br/>Vélo</p>
+		</div>
+		<p>Location de vélo interactive</p>
+	</header>
+	<!--Diaporama-->
+	<div id="Diaporama">
+		<div id="slideImg">
+			<figure class="figureImg"><img src="Image/Slide1.jpg" alt="Vélo" class="imageSlide"/></figure>
+		</div>
+		<div id="slideTxt">
+			<p>Réserver votre vélo en un clic</p>
+		</div>
+		<div id="slideBtn">
+			<div id="slideBtnLeft"><p><</p></div>
+			<div id="slideBtnPause"><p>||</p></div>
+			<div id="slideBtnRight"><p>></p></div>
+		</div>
+	</div>
+	<!--Réservation du vélo-->
+	<div id="CarteReservation">
+		<div id="mapid">
+			
+		</div>
+		<div id="colonneReservation">
+			<div id="Reservation">
+				<div id="NomStation"></div>
+				<div id="Adresse"></div>
+				<div id="StationDisponible"></div>
+				<div id="nombrePlaceDisponible"></div>
+				<div id="nombreVeloDisponible"></div>
+			</div>
+			<form id="Formulaire">
+				<input type="text" id="Nom" name="nom" placeholder="Nom*" required="">
+				<input type="text" id="Prenom" name="prenom" placeholder="Prenom*" required="">
+				<input type="submit" id="boutonReserver" value="Réserver">
+			</form>
+			<div id="Signature">
+				<p>Signature</p>
+				<canvas id="Canvas" width="200px" height="150px">
+					<p>Désolé , votre navigateur ne supporte pas Canvas. Mettez votre navigateur à jour</p>
+				</canvas>
+				<button id="resetSignature">Recommencer Signature</button>
+				<button id="validerSignature">Valider</button>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div id="RecapReservation">
+			<p>Réservation</p>
+			<p id="DetailReservation"></p>
+			<p id="TempsRestant"></p>
+		</div>
+	</footer>
+	<!--script lié au Diaporama-->
+	<script src="Slide.js"></script>
+	<!--script lié à la reservation de vélo-->
+	<script src="Carte.js"></script>
+	<script src="RecuperationDonnees.js"></script>
+	<script src="RequeteJcDecaux.js"></script>
+	<script src="Canvas.js"></script>
+	<script src="DonneesReservation.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

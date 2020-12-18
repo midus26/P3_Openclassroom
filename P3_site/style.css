@@ -1,0 +1,272 @@
+header{
+	width : 100%;
+	height : 80px;
+	display : flex;
+	justify-content : space-between;
+	background-color : #5CADD3;
+}
+body{
+	background-color : #e1e1e1;
+}
+#Logo{
+	width : 75px;
+	height: 75px;
+	background-color : #fff;
+	border-radius : 80px 80px 80px 80px;
+	margin-right : 15px;
+}
+#LogoTitre{
+	margin-top : auto;
+	margin-bottom : auto;
+	display : flex;
+	wrap : no-wrap;
+	justify-content : space-between;
+	font-weight : bold;
+	font-size : 1.2em;
+}
+
+header p{
+	margin-top : auto;
+	margin-bottom : auto;
+	margin-right : 15px;
+	font-weight : bold;
+	font-size : 1.2em;
+}
+#Diaporama{
+	width:800px;
+	height:500px;
+	margin : auto;
+	border : solid;
+	position : relative;
+	display : flex;
+	margin-top : 15px;
+	margin-bottom : 15px;
+}
+#slideImg{
+	width : 50%;
+	height : 100%;
+}
+.figureImg{
+	width : 100%;
+	height : 100%;
+	margin : 0;
+}
+.imageSlide{
+	width : 100%;
+	height : 100%;
+}
+img{
+	max-width : 100%;
+	height : 100%;
+}
+#slideTxt{
+	width : 50%;
+	height : 100%;
+	display : flex;
+	background-color : #5CADD3;
+}
+#slideTxt p{
+	text-align : center;
+	display : flex;
+	margin : auto;
+	font-size : 1.5em;
+	font-weight : bold;
+}
+#slideBtn{
+	width : 100px;
+	height : 50px;
+	border-radius : 5px;
+	display : flex;
+	position : absolute;
+	bottom : 0;
+	left : 44%;
+	background-color : RGBa(0,0,0,0.6);
+	text-align : center;
+	font-size : 1.5em;
+	font-weight : bold;
+}
+#slideBtnLeft{
+	width : 33%;
+	height : 100%;
+	cursor : pointer;
+	position : relative;
+}
+#slideBtnLeft p{
+	position : absolute;
+		top : -20%;
+		left : 25%;
+}
+#slideBtnPause{
+	width : 34%;
+	height : 100%;
+	cursor : pointer;
+	position : relative;
+}
+#slideBtnPause p{
+	position : absolute;
+		top : -22%;
+		left : 30%;
+}
+#slideBtnRight{
+	width : 33%;
+	height : 100%;
+	cursor : pointer;
+	position : relative;
+}
+#slideBtnRight p{
+	position : absolute;
+		top : -20%;
+		left : 25%;
+}
+/*Hover Boutton switch slide*/
+#slideBtnLeft:hover{
+	border-radius : 5px 0px 0px 5px;
+	background-color : RGBa(255,255,255,0.6);
+}
+#slideBtnPause:hover{
+	background-color : RGBa(255,255,255,0.6);
+}
+#slideBtnRight:hover{
+	border-radius : 0px 5px 5px 0px;
+	background-color : RGBa(255,255,255,0.6);
+}
+/*Carte + Reservation*/
+#CarteReservation{
+	display : flex;
+	margin : auto;
+	width : 90%;
+}
+/*Carte + location vélo*/
+#mapid{
+	width : 100%;
+	border-radius : 15px;
+	height : 600px;
+	margin : auto;
+}
+#colonneReservation{
+	display : none;
+	margin-left : 15px;
+	font-weight : bold;
+	font-size : 1.2em;
+	width : 30%;
+}
+#Reservation{
+	box-shadow : 5px 5px 5px grey;
+	padding : 10px;
+	border-radius : 5px;
+	height : max-content;
+}
+#Formulaire{
+	background-color : white;
+	box-shadow : 5px 5px 5px grey;
+	padding : 10px;
+	margin-top : 15px;
+	border-radius : 5px;
+	height : max-content;
+}
+input{
+	width : 90%;
+	border-radius : 10px;
+	background-color : #e1e1e1;
+	padding : 10px;
+	margin : 5px;
+	font-weight : bold;
+}
+#Nom:invalid{
+	border : 2px solid red;
+}
+#Nom:valid{
+	border : 2px solid green;
+}
+#Prenom:invalid{
+	border : 2px solid red;
+}
+#Prenom:valid{
+	border : 2px solid green;
+}
+#boutonReserver{
+	display : flex;
+	margin : auto;
+	width : 90%;
+	height : max-content;
+	font-weight : bold;
+}
+#boutonReserver:hover{
+	background-color : grey;
+	color : #5CADD3;
+}
+/*Canvas*/
+#Signature{
+	display : none;
+	width : 100%;
+	height : max-content;
+	background-color : white;
+	margin-top : 15px;
+	box-shadow : 5px 5px 5px grey;
+	border-radius : 5px;
+	margin-bottom : 15px;
+	flex-wrap : wrap;
+	padding-bottom : 10px;
+	flex-direction : column;
+}
+#Signature p{
+	margin-left : 10px;
+}
+#Canvas{
+	width : 200px;
+	height : 150px;
+	margin :auto;
+	background-color : #c4c4c4c4;
+	border : solid 1px black;
+	margin-bottom : 15px;
+	cursor : pointer;
+}
+#resetSignature{
+	display : none;
+	margin : auto;
+	width : 90%;
+	height : max-content;
+	font-weight : bold;
+	text-align : center;
+	border-radius : 10px;
+	padding : 10px;
+}
+#validerSignature{
+	display : none;
+	margin : auto;
+	width : 90%;
+	height : max-content;
+	font-weight : bold;
+	text-align : center;
+	border-radius : 10px;
+	padding : 10px;
+}
+/*Recap Reservation*/
+#RecapReservation{
+	width : 70%;
+	background-color : white;
+	padding : 15px;
+	display : none;
+	border-radius : 15px;
+	border : solid 2px #5cadd3;
+}
+#RecapReservation p{
+	font-weight : bold;
+}
+@media all and (max-width : 1024px){
+	#CarteReservation{
+		display : flex;
+		flex-wrap : wrap;
+	}
+	#colonneReservation{
+		margin-top : 15px;
+	}
+}
+@media all and (max-width : 800px){
+	#Diaporama{
+		width : 100%;
+	}
+	#colonneReservation{
+		width : 100%;
+	}
+}
